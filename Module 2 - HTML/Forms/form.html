@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="https://webhook.site/e6602948-518d-46b1-9f2c-e7ea3afa23a9" method="post">
+    <input type="text" name="q">
+    <input type="submit" value="Поиск">
+</form>
+<br>
+<br>
+<form action="https://webhook.site/e6602948-518d-46b1-9f2c-e7ea3afa23a9" method="post">
+    <div>
+        <label>
+            Имя:
+            <input type="text" name="name" placeholder="Ivanello" disabled>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Фамилия:
+            <input type="text" name="surname" placeholder="Maranell" readonly>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Ваш пол:
+            <select name="gender" required>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+            </select>
+        </label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        Ваши направления:
+        <br>
+        <label>
+            <input type="checkbox" name="directions[]" value="design">Веб-дизайн
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="directions[]" value="development">Веб-разработка
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="directions[]" value="testing">Тестирование
+        </label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        Ваши направления:
+        <br>
+        <label>
+            <input type="radio" name="experience" value="1" required>Менее 2-х лет
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="experience" value="2" required>2-5 лет
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="experience" value="3" required>Более 5 лет
+        </label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <label>
+            Расскажите о себе:
+            <br>
+            <textarea name="info" cols="30" rows="10" required></textarea>
+        </label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <label>
+            <input type="checkbox" name="agreed" value="1">Я согласен на рассылку
+        </label>
+    </div>
+    <button type="submit">Отправить</button>
+    <br>
+    <button type="reset">Сбросить</button>
+
+
+</form>
+
+</body>
+</html>
