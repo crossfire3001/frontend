@@ -1,0 +1,127 @@
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*=============== MAIN ===============*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #000;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    margin: 69px 0 93px 0;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+    margin-bottom: 69px;
+}
+
+img {
+    margin: 10px;
+}
+
+h2 {
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: center;
+}
+
+h3 {
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 17px;
+}
+
+p {
+    color: #000;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 49px;
+}
+
+ul {
+    color: #000;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21px;
+    padding-left: 15px;
+    margin-bottom: 84px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 561px;
+    margin: 0 auto 105px auto;
+    text-align: center;
+}
+
+form h2 {
+    margin-bottom: 0;
+}
+
+input {
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #FFF;
+    box-sizing: border-box;
+    padding: 22px 25px 24px 25px;
+    color: black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    width: 429px;
+    margin-top: 32px;
+}
+
+input::placeholder {
+    color: #8E8E8E;
+}
+
+button {
+    border-radius: 20px;
+    background: #008968;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    padding: 23px;
+    width: 429px;
+    margin-top: 32px;
+    border: 0;
+}
+
+
+
+
+
+
+
+

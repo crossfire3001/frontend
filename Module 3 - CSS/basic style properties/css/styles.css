@@ -1,0 +1,38 @@
+body {
+    background-color: grey;
+}
+
+p {
+    /* межбуквенный интервал */
+    letter-spacing: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgba(200, 100, 50, 0.9);
+    text-shadow: 3px 3px 5px #000;
+}
+
+.test {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+ /*   background-size: cover; */
+    background-position: center;
+/*    background: linear-gradient(90deg, #ff8000, #000); */
+
+}
+
+h3 {
+    background: yellow;
+    padding: 10px 5px;
+    border: 1px solid red;
+    border-radius: 10px 10px 10px 30px;
+    margin: 30px auto;
+}
+
+.text {
+    width: 1000px;
+    min-width: 200px;
+    box-shadow: 0 0 10px 2px #000;
+}
