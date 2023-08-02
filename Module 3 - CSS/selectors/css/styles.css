@@ -1,0 +1,41 @@
+body {
+    background-color: silver;
+}
+
+#my-div {
+    font-size: 30px;
+    font-style: italic;
+}
+
+p, .red-text, #my-div {
+    padding: 20px;
+    background-color: grey;
+}
+
+/* приоритетный стиль */
+div.orange-text {
+    color: orange;
+}
+
+/* комбинация стилей */
+p.container {
+    /* ...стили... */
+}
+
+/* комбинация стилей */
+p#my-div {
+    /* ...стили... */
+}
+
+div p span {
+    border: 1px solid green;
+}
+
+.text > p > span {
+    color: red;
+}
+
+/* самый высокий приоритет */
+.desc {
+    color: aqua !important;
+}
