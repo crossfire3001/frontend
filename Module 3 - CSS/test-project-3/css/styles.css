@@ -1,0 +1,108 @@
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.button {
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 34px 20px 35px;
+}
+
+/*=============== MAIN ===============*/
+.main {
+    background-image: url("../images/main_bg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+    padding: 35px 0 33px 0;
+    border-bottom: 1px solid #a27eda;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-right: 282px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu-item {
+    margin-right: 51px;
+    display: inline-block;
+}
+
+.menu-item a {
+    font-size: 16px;
+    color: rgb(237, 224, 248);
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+/*=============== COURSE ===============*/
+.course {
+    padding: 150px 0 205px 0;
+}
+
+.course-title {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.222;
+    max-width: 452px;
+}
+
+.course-text {
+    margin-top: 88px;
+}
+
+.course-text p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    margin-left: 15px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.course-action {
+    margin-top: 101px;
+}
+
+.button {
+    color: rgb(255, 255, 255);
+    border: 2px solid #fff;
+}
+
+/*=============== COURSE-DETAILS ===============*/
+.course-details {
+    padding: 140px 0 140px 0;
+}
+
+li {
+    list-style: none;
+}
+
+li > img {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+}
