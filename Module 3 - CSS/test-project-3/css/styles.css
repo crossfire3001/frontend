@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: lightgrey;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -37,7 +36,7 @@ body {
     margin: 0 auto;
 }
 
-.logo {
+.header .logo {
     margin-right: 282px;
 }
 
@@ -95,14 +94,86 @@ body {
 /*=============== COURSE-DETAILS ===============*/
 .course-details {
     padding: 140px 0 140px 0;
+    background-color: #fff;
+}
+
+.course-details-title {
+    font-size: 35px;
+    color: rgb(139, 103, 214);
+    font-weight: bold;
+    line-height: 1.571;
+}
+
+.course-menu {
+    margin-top: 53px;
 }
 
 li {
     list-style: none;
+    margin-top: 15px;
+    font-size: 16px;
+    color: rgb(49, 27, 94);
+    line-height: 1.5;
 }
 
 li > img {
     display: inline-block;
     vertical-align: bottom;
     margin-right: 15px;
+}
+
+/*=============== PROMO ===============*/
+.promo {
+    background-image: url("../images/promo_bg.png");
+    background-position: center;
+    padding: 140px 0 0 0;
+    background-size: cover;
+}
+
+.promo-container {
+    width: 996px;
+    background: #fff;
+    padding: 61px 44px ;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.promo-container p {
+    max-width: 590px;
+    margin: 0 auto 37px;
+}
+
+.promo-title {
+    font-size: 35px;
+    color: rgb(139, 103, 214);
+    font-weight: bold;
+    line-height: 1.571;
+    margin-bottom: 40px;
+}
+
+.promo-text {
+    font-size: 16px;
+    color: rgb(49, 27, 94);
+    line-height: 1.5;
+}
+
+.promo-text span {
+    font-weight: bold;
+}
+
+.button-promo {
+    margin-top: 4px;
+    font-size: 16px;
+    color: rgb(177, 128, 228);
+    font-weight: bold;
+    border: 2px solid #b180e4;
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+    margin-top: 141px;
+    padding: 47px 0 46px 0;
+    text-align: center;
+    border-top: 1px solid #a27eda;
 }
