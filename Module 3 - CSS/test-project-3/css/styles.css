@@ -28,7 +28,7 @@ body {
 /*=============== HEADER & NAV ===============*/
 .header {
     padding: 35px 0 33px 0;
-    border-bottom: 1px solid #a27eda;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
 }
 
 .container {
@@ -71,6 +71,11 @@ body {
 
 .course-text {
     margin-top: 88px;
+    font-size: 0;
+}
+
+.course img {
+    vertical-align: bottom;
 }
 
 .course-text p {
@@ -79,7 +84,6 @@ body {
     line-height: 1.5;
     margin-left: 15px;
     display: inline-block;
-    vertical-align: bottom;
 }
 
 .course-action {
@@ -108,7 +112,7 @@ body {
     margin-top: 53px;
 }
 
-li {
+.course-item {
     list-style: none;
     margin-top: 15px;
     font-size: 16px;
@@ -128,15 +132,16 @@ li > img {
     background-position: center;
     padding: 140px 0 0 0;
     background-size: cover;
+    text-align: center;
 }
 
-.promo-container {
-    width: 996px;
+.promo-content {
     background: #fff;
     padding: 61px 44px ;
     margin: 0 auto;
     text-align: center;
     border-radius: 20px;
+    max-width: 996px;
 }
 
 .promo-container p {
@@ -175,5 +180,5 @@ li > img {
     margin-top: 141px;
     padding: 47px 0 46px 0;
     text-align: center;
-    border-top: 1px solid #a27eda;
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
 }
