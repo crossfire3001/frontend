@@ -1,0 +1,73 @@
+body {
+    background-color: lightgrey;
+}
+
+span {
+    border: 1px solid black;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.newspan {
+    font-size: 50px;
+}
+
+.blocks {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid orange;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.card {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid deeppink;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.cards {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card-image {
+    background: green;
+    height: 100px;
+    width: 100%;
+}
+
+.block-hidden {
+    visibility: hidden; /* удаляет элемент на странице но скрывает его в коде */
+/*    display: none; полностью удаляет элемент со страницы    */
+}
+
+.container-items {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.item {
+    background: #C4C4C4;
+    width: 276px;
+    height: 250px;
+    display: inline-block;
+    margin: 16px;
+}
+
+.items {
+    margin-right: -16px;
+    margin-left: -16px;
+    font-size: 0;
+}
+
+
