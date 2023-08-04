@@ -1,0 +1,149 @@
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+    padding: 26px 0 32px 0;
+    background-color: #363636;
+    text-align: center; /* выравнивание всего текста по центру */
+}
+
+.menu ul li {
+    margin: 0 26px;
+    display: inline-block; /* делаем элементы строчно-блочными для выравнивания */
+    vertical-align: middle; /* выравниванием li по центру с logo */
+}
+
+.menu ul li a {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-decoration: none; /* убираем подчеркивание ссылок */
+}
+
+/*=============== MAIN ===============*/
+.main {
+    padding: 102px 0 145px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* выравнивание нашего контейнера по центру */
+}
+
+.main .main-container {
+    font-size: 0; /* применяли данный стиль, так как иначе блок main-image не помещался в один ряд с main-info */
+}
+
+.main-info {
+    display: inline-block; /* размещение наших блоков на одной строке main-info + main-image */
+    max-width: 524px; /* уменьшаем ширину блока для вмещения картинки телефона справа */
+    vertical-align: middle; /* выравнивание блока main-info по центру относительно картинки телефона */
+    margin-right: 190px; /* отступ до блока main-image */
+}
+
+.main-image {
+    display: inline-block; /* размещение наших блоков на одной строке main-info + main-image */
+    vertical-align: middle; /* выравнивание блока main-image по центру относительно main-info */
+}
+
+.main h1 {
+    margin-bottom: 50px;
+    font-size: 45px;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+    line-height: 1.222;
+}
+
+.main-text {
+    margin-bottom: 97px;
+    max-width: 420px; /* ограничение нашего текста по ширине, так как текст длиннее h1 */
+    font-size: 17px;
+    color: rgb(57, 39, 3);
+    line-height: 1.471;
+}
+
+.button {
+    padding: 22px;
+    background-color: rgb(170, 204, 220);
+    width: 232px; /* не нужно ставить max-width, так как кнопка не больше текста или h1 */
+    border: 0;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*=============== ABOUT ===============*/
+.about {
+    background-color: #b99d7f;
+    padding: 130px 0 143px 0;
+}
+
+.about h2 {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.222;
+    text-align: center;
+    margin-bottom: 36px; /* отступ рассчитан исходя из отступов about-item */
+}
+
+.about-items {
+    margin-left: -47px; /* убираем отступы в about-items */
+    margin-right: -47px; /* убираем отступы в about-items */
+    font-size: 0; /* чтобы не было отступов в блоке */
+}
+
+.about-item {
+    max-width: 338px; /* общий размер для блока картинки с текстом */
+    font-size: 0; /* не вмещались картинка и текст */
+    margin: 27px 47px; /* отступы между блоками */
+    display: inline-block; /* сделали элементы в ряд */
+}
+
+.about-item-text {
+    display: inline-block; /* размещение наших блоков на одной строке с image */
+    vertical-align: middle; /* выравнивание блока text по центру относительно image */
+    margin-left: 15px; /* узнали какой единый размер стоит у картинок w100xh100 */
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    line-height: 1.471;
+    width: 220px; /* ширина блока текста из photoshop */
+}
+
+.about-item-image {
+    display: inline-block; /* размещение наших блоков на одной строке с text */
+    vertical-align: middle; /* выравнивание блока image по центру относительно text */
+    width: 100px; /* параметры единого размера для всех картинок */
+    height: 100px; /* параметры единого размера для всех картинок */
+    text-align: center; /* центрируем картинку относительно параметров */
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+    background: #363636;
+    padding: 30px 0 33px 0;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-logo {
+    display: inline-block; /* размещение logo на одной строке с текстом */
+    vertical-align: middle; /* выравнивание всех наших элементов по центру */
+}
+
+.footer-time {
+    display: inline-block; /* размещение текста на одной строке с logo */
+    vertical-align: middle; /* выравнивание всех наших элементов по центру */
+    margin-left: 295px;
+}
+
+.footer-phones {
+    display: inline-block; /* размещение контактов на одной строке с текстом и logo */
+    vertical-align: middle; /* выравнивание всех наших элементов по центру */
+    margin-left: 289px;
+}
