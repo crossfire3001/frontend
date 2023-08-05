@@ -1,0 +1,178 @@
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+    padding: 20px 0 20px 0;
+    background: #1F1F1F;
+    text-align: center;
+
+}
+
+.header .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 187px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.header a, nav {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.header .nav-item {
+    list-style: none;
+    display: inline-block; /* разбрасывает li в строку, вместо колонны */
+}
+
+.header .nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header .nav-link {
+    color: #BDBDBD;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header .search {
+    margin-left: 187px;
+}
+
+
+
+/*=============== MAIN ===============*/
+.main {
+    padding: 53px 0 45px 0;
+}
+
+.main .main-movie {
+    max-width: 552px;
+    margin-right: 51px;
+}
+
+.main .main-movie, .main-image {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.main .main-title {
+    color: #1F1F1F;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.main .main-date {
+    margin-top: 41px;
+    color: #1F1F1F;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    text-transform: capitalize;
+}
+
+.main .main-text {
+    margin-top: 14px;
+    color: #1F1F1F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main .main-button-actions {
+    margin-top: 33px;
+}
+
+.main .button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background: #FE6388;
+    border: none;
+    max-width: 136px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main .main-button-actions > button, a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main button, a:not(:last-child) {
+    margin-right: 12px;
+}
+
+.main .main-image {
+    max-width: 596px;
+}
+
+
+
+/*=============== MOVIES ===============*/
+.movies {
+    padding: 45px 0 53px 0;
+}
+
+.movies h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1F1F1F;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+}
+
+.movies .other-movies {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.movies .movie-item {
+    margin: 20px 12px 0 12px;
+}
+
+.movies .movie-item {
+
+}
+
+.movies .movies-more {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.movies .movies-more > p {
+    margin-top: 5px;
+    color: #BDBDBD;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.76px;
+}
