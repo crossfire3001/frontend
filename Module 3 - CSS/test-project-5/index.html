@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
 <!--=============== HEADER ===============-->
 <header class="header">
     <div class="container">
-        <a href="#">
-            <img class="logo" src="images/logo.png" alt="logo">
+        <a class="header-logo" href="#">
+            <img src="images/logo.png" alt="Логотип">
         </a>
         <nav class="menu">
             <ul>
-                <li class="nav-item"><a class="nav-link" href="#">моя библиотека</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">мои покупки</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Все фильмы</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Новинки</a></li>
+                <li><a href="#">моя библиотека</a></li>
+                <li><a href="#">мои покупки</a></li>
+                <li><a href="#">Все фильмы</a></li>
+                <li><a href="#">Новинки</a></li>
             </ul>
         </nav>
-        <a href="#">
-            <img class="search" src="images/search.png" alt="search">
+        <a class="header-search" href="#">
+            <img src="images/search.png" alt="Иконка поиска">
         </a>
     </div>
     <!-- /.container -->
@@ -32,70 +31,65 @@
 <!--=============== MAIN ===============-->
 <section class="main">
     <div class="container">
-        <div class="main-movie">
-            <h1 class="main-title">Сталкер</h1>
-            <div class="main-date">
-                1979, фантастика, драма, СССР
+        <div class="main-info">
+            <h1>Сталкер</h1>
+            <div class="main-info-text">1979, фантастика, драма, СССР</div>
+            <!-- /.main-info-text -->
+            <div class="main-info-description">
+                В некой запретной Зоне, по слухам, существует комната,
+                где исполняются самые заветные желания.
+                К этой комнате отправляются модный Писатель и авторитетный
+                Профессор — каждый по своим причинам, о которых предпочитают не говорить.
+                А ведет их туда Сталкер — проводник по Зоне — то ли юродивый, то ли апостол новой веры.
             </div>
-            <!-- /.main-date -->
-            <p class="main-text">
-                В некой запретной Зоне, по слухам, существует комната, где исполняются самые заветные желания.
-                К этой комнате отправляются модный Писатель и авторитетный Профессор — каждый по своим причинам,
-                о которых предпочитают не говорить. А ведет их туда Сталкер — проводник по Зоне — то ли юродивый,
-                то ли апостол новой веры.
-            </p>
-            <div class="main-button-actions">
-                <button class="button">Смотреть</button>
-                <a href="#">
-                    <img src="images/bookmark.png" alt="bookmark">
-                </a>
-                <a href="#">
-                    <img src="images/camera.png" alt="camera">
-                </a>
+            <!-- /.main-info-description -->
+            <div class="main-actions">
+                <a class="button button-pink" href="#">Смотреть</a>
+                <a class="button button-black button-black-bookmark" href="#"><img src="images/bookmark.png" alt="Закладка"></a>
+                <a class="button button-black button-black-camera" href="#"><img src="images/camera.png" alt="Камера"></a>
             </div>
-            <!-- /.main-button-actions -->
+            <!-- /.main-actions -->
         </div>
-        <!-- /.main-movie -->
+        <!-- /.main-info -->
         <div class="main-image">
-            <img src="images/movie_bg.png" alt="movie_background">
+            <img src="images/stalker.png" alt="Изображение фильма сталкер">
         </div>
         <!-- /.main-image -->
     </div>
     <!-- /.container -->
 </section>
 
-<!--=============== MOVIES ===============-->
-<section class="movies">
+<!--=============== FILMS ===============-->
+<section class="films">
     <div class="container">
         <h2>Другие фильмы</h2>
-        <div class="other-movies">
-            <a class="movie-item" href="#">
-                <img src="images/image1.png" alt="">
+        <div class="films-items">
+            <a href="#" class="films-item">
+                <img src="images/image1.png" alt="Изображение фильма">
             </a>
-            <a class="movie-item" href="#">
-                <img src="images/image2.png" alt="">
+            <a href="#" class="films-item">
+                <img src="images/image2.png" alt="Изображение фильма">
             </a>
-            <a class="movie-item" href="#">
-                <img src="images/image3.png" alt="">
+            <a href="#" class="films-item">
+                <img src="images/image3.png" alt="Изображение фильма">
             </a>
-            <a class="movie-item" href="#">
-                <img src="images/image4.png" alt="">
+            <a href="#" class="films-item">
+                <img src="images/image4.png" alt="Изображение фильма">
             </a>
-            <a class="movie-item" href="#">
-                <img src="images/image5.png" alt="">
+            <a href="#" class="films-item">
+                <img src="images/image5.png" alt="Изображение фильма">
             </a>
-            <a class="movie-item" href="#">
-                <img src="images/image6.png" alt="">
+            <a href="#" class="films-item">
+                <img src="images/image6.png" alt="Изображение фильма">
             </a>
         </div>
-        <!-- /.other-movies -->
-        <div class="movies-more">
-            <a href="#">
-                <img src="images/arrow.png" alt="arrow">
-            </a>
-            <p>Показать еще</p>
+        <!-- /.films-items -->
+        <div class="films-more">
+            <img src="images/more.png" alt="Иконка загрузки">
+            <div class="show-more">Показать еще</div>
+            <!-- /.show-more -->
         </div>
-        <!-- /.movies-more -->
+        <!-- /.films-more -->
     </div>
     <!-- /.container -->
 </section>

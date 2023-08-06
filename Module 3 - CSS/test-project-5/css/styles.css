@@ -1,178 +1,236 @@
 /*=============== BASE ===============*/
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
 }
 
 /*=============== HEADER & NAV ===============*/
 .header {
-    padding: 20px 0 20px 0;
-    background: #1F1F1F;
-    text-align: center;
-
+    background-color: #1F1F1F;
+    padding: 20px 0;
 }
 
-.header .logo {
+.header-logo {
+    display: inline-block;
+    vertical-align: middle;
     width: 60px;
-    height: 60px;
-    margin-right: 187px;
+}
+
+.header-logo img {
+    max-width: 100%;
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.header .container, .main .container {
     font-size: 0;
 }
 
-.header a, nav {
-    vertical-align: middle;
+.logo {
     display: inline-block;
 }
 
-.header .nav-item {
+.menu {
+    margin-left: 187px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu ul {
     list-style: none;
-    display: inline-block; /* разбрасывает li в строку, вместо колонны */
 }
 
-.header .nav-item:not(:last-child) {
-    margin-right: 50px;
+.menu ul li {
+    display: inline-block;
+    margin: 0 25px;
 }
 
-.header .nav-link {
+.menu ul li:first-child {
+    margin-left: 0;
+}
+
+.menu ul li a {
     color: #BDBDBD;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.header .search {
-    margin-left: 187px;
+.header-search {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 153px;
 }
-
-
 
 /*=============== MAIN ===============*/
 .main {
     padding: 53px 0 45px 0;
 }
 
-.main .main-movie {
-    max-width: 552px;
-    margin-right: 51px;
-}
-
-.main .main-movie, .main-image {
+.main-info {
     display: inline-block;
     vertical-align: middle;
+    max-width: 552px;
 }
 
+.main-image {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 51px;
+}
 
-.main .main-title {
+.main h1 {
     color: #1F1F1F;
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 4px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    margin-bottom: 41px;
 }
 
-.main .main-date {
-    margin-top: 41px;
+.main-info-text {
     color: #1F1F1F;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.44px;
+    letter-spacing: 0.08em;
     text-transform: capitalize;
+    margin-bottom: 14px;
 }
 
-.main .main-text {
-    margin-top: 14px;
+.main-info-description {
     color: #1F1F1F;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    letter-spacing: 0.08em;
+    margin-bottom: 33px;
 }
 
-.main .main-button-actions {
-    margin-top: 33px;
-}
-
-.main .button {
-    padding: 10px 20px 10px 20px;
+.button {
     border-radius: 5px;
-    background: #FE6388;
-    border: none;
-    max-width: 136px;
-    color: #FFF;
+    color: #fff;
+    padding: 10px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
 }
 
-.main .main-button-actions > button, a {
-    display: inline-block;
+.button.button-pink {
+    background-color: #FE6388;
+    width: 137px;
+}
+
+.button.button-pink:hover {
+    background-color: #853445;
+}
+
+.button.button-black {
+    background-color: #1F1F1F;
+    margin-left: 13px;
+    width: 38px;
+    height: 38px;
+    box-sizing: border-box;
+}
+
+.button.button-black:hover {
+    background-color: #000;
+}
+
+.button.button-black-camera {
+    padding-top: 5px;
+    line-height: 37px;
+    padding-left: 9px;
+}
+
+.button.button-black-bookmark {
+    line-height: 21px;
+}
+
+
+.main-actions a.button {
     vertical-align: middle;
 }
 
-.main button, a:not(:last-child) {
-    margin-right: 12px;
-}
-
-.main .main-image {
-    max-width: 596px;
-}
-
-
-
-/*=============== MOVIES ===============*/
-.movies {
+/*=============== FILMS ===============*/
+.films {
     padding: 45px 0 53px 0;
 }
 
-.movies h2 {
-    text-align: center;
-    margin-bottom: 15px;
+.films h2 {
     color: #1F1F1F;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.76px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-.movies .other-movies {
+.films-items {
+    font-size: 0;
     margin-left: -12px;
     margin-right: -12px;
 }
 
-.movies .movie-item {
-    margin: 20px 12px 0 12px;
+.films-item {
+    margin: 10px 12px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.movies .movie-item {
-
+.films-item:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
-.movies .movies-more {
-    margin-top: 35px;
+.films-more {
+    margin-top: 25px;
     text-align: center;
+    margin-bottom: 5px;
 }
 
-.movies .movies-more > p {
-    margin-top: 5px;
+.films-more:hover .show-more {
+    color: #1F1F1F;
+}
+
+.show-more {
     color: #BDBDBD;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.76px;
+    letter-spacing: 0.08em;
+}
+
+.menu ul li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.header-search:hover {
+    opacity: 0.5;
 }
