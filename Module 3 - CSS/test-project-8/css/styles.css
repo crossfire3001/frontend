@@ -29,6 +29,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     border: 0;
+    width: 205px;
 }
 
 /*=============== MAIN ===============*/
@@ -43,6 +44,9 @@ body {
 .header {
     background-color: #dde0db;
     padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .container {
@@ -93,7 +97,6 @@ body {
     background-color: transparent;
     color: rgb(121, 136, 144);
     border: 1px solid #818282;
-    width: 205px;
 }
 
 /*=============== GALLERY ===============*/
@@ -177,6 +180,110 @@ body {
 }
 
 /*=============== TOURS ===============*/
+.tours {
+    padding: 54px 0 88px 0;
+}
 
+.tours h2 {
+    font-size: 40px;
+    font-family: SpectralSemibold, sans-serif;
+    color: rgb(47, 40, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
+.tours-items {
+    margin-right: -12px;
+    margin-left: -12px;
+    font-size: 0;
+}
 
+.tour-item {
+    margin: 0 12px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 384px;
+    position: relative;
+}
+
+.tour-item-info {
+    background-color: #31393f;
+    padding: 22px 22px 40px 22px;
+}
+
+.tour-item-text {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.button.button-filled {
+    background-color: #da8246;
+    font-size: 18px;
+    color: rgb(37, 41, 43);
+}
+
+.button.button-filled:hover {
+    box-shadow: 0 4px 14px 1px rgba(217, 149, 103, 0.8);
+}
+
+.tour-item-action {
+    text-align: center;
+}
+
+.fix-block {
+    background-color: #da8246;
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fix-block img {
+    vertical-align: middle;
+}
+
+/*=============== FOOTER ===============*/
+.footer {
+    padding: 54px 0 49px 0;
+    background-color: rgb(49, 57, 63);
+    font-size: 0;
+}
+
+.footer .logo {
+    margin-right: 900px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.footer .footer-contacts {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.footer .footer-phone {
+    font-size: 18px;
+    color: rgb(167, 185, 197);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer .footer-call {
+    font-size: 14px;
+    color: rgb(131, 145, 156);
+    line-height: 1.2;
+}
+
+.footer .footer-call:not(:last-child) {
+    margin-bottom: 7px;
+}
