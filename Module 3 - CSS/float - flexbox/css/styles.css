@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: darksalmon;
+    display: flex;
+ /*   flex-wrap: wrap;
+    flex-direction: column; */
+    max-height: 1200px;
+/*    flex-flow: column wrap; */
+    justify-content: flex-end;
+    height: 500px;
+    align-items: center;
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    background: slateblue;
+    padding: 30px;
+    margin: 20px;
+}
+
+.third {
+    order: 4;
+}
+
+.second {
+    order: 1;
+}
