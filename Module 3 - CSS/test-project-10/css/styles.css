@@ -46,6 +46,7 @@ img {
 .layout {
     display: flex;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 /*=============== SIDEBAR ===============*/
@@ -160,6 +161,44 @@ img {
     align-items: center;
 }
 
+.header .menu {
+    position: relative;
+}
+
+.tasks-block {
+    display: none;
+    position: absolute;
+    width: 150px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 4px 20px 0 rgba(102, 102, 102, 0.15);
+    padding: 30px 25px 30px 20px;
+    left: 190px;
+}
+
+.task-item {
+    color: #686464;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.task-item:first-child {
+    color: #686464;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 15px;
+}
+
+.menu ul li:last-child:hover .tasks-block {
+    display: block;
+    cursor: pointer;
+}
+
+.header .header-info ul {
+    display: flex;
+    align-items: center;
+}
+
 .header .navigation {
     margin-right: 60px;
 }
@@ -178,7 +217,7 @@ img {
     fill: #3D63D2;
 }
 
-.header a:nth-child(2) {
+.header li:nth-child(2) {
     margin-right: 40px;
 }
 
@@ -243,6 +282,7 @@ img {
 /*=============== MAIN ===============*/
 .main {
     padding: 25px 40px 73px 40px;
+    position: relative;
 }
 
 .main-cards {
@@ -325,6 +365,40 @@ img {
     display: flex;
     justify-content: space-between;
 }
+
+/*=============== Technical support block ===============*/
+.tech-support-block {
+    border-radius: 10px 10px 0 0;
+    background: #467DF2;
+    width: 186px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -75px;
+    top: 327px;
+    transform: rotate(-90deg);
+}
+
+.tech-support-block:hover {
+    background: #2F54A3;
+}
+
+.tech-support-block svg {
+    transform: rotate(90deg);
+    margin-right: 10px;
+}
+
+.tech-support-block a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+
+
 
 
 
