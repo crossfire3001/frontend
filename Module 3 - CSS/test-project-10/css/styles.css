@@ -6,8 +6,21 @@
 }
 
 body {
-    background-color: lightslategrey;
+    background-color: #EDEEF3;;
     font-family: NunitoRegular, sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    font-size: 0;
 }
 
 /*=============== FONTS ===============*/
@@ -15,6 +28,12 @@ body {
     font-family: NunitoRegular;
     src: url("../fonts/Nunitoregular.woff");
     font-weight: 400;
+}
+
+@font-face {
+    font-family: NunitoBold;
+    src: url("../fonts/Nunitobold.woff");
+    font-weight: 700;
 }
 
 @font-face {
@@ -37,6 +56,8 @@ body {
     flex-direction: column;
     position: relative;
     padding: 17px;
+    border: 1px solid #E2E2E2;
+    flex-shrink: 0;
 }
 
 .sidebar .logo {
@@ -119,4 +140,191 @@ body {
     line-height: 19px;
     text-decoration: none;
 }
+
+/*=============== HEADER ===============*/
+.content {
+    flex-grow: 1;
+}
+
+.header {
+    background: #F7F7F7;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #E2E2E2;
+}
+
+.header .header-info {
+    display: flex;
+    align-items: center;
+}
+
+.header .navigation {
+    margin-right: 60px;
+}
+
+.header a {
+    color: #858796;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header .header-info a:hover  {
+    color: #3D63D2;
+}
+
+.header .header-info a:hover svg path {
+    fill: #3D63D2;
+}
+
+.header a:nth-child(2) {
+    margin-right: 40px;
+}
+
+.header a > span {
+    margin-right: 5px;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-search-input {
+    border-radius: 10px;
+    border: 1px solid #E2E2E2;
+    background: #EFEFF5;
+    outline: none;
+    padding: 10px 44px;
+    width: 373px;
+}
+
+.header-search-button {
+    position: absolute;
+    left: 20px;
+    font-size: 0;
+}
+
+.header-search-input::placeholder {
+    color: #B3B3B3;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header-search-actions a {
+    margin: 0 40px;
+}
+
+.header .header-search-actions a:hover svg path {
+    fill: #467DF2;
+}
+
+.header .header-search-upload {
+    border-radius: 10px;
+    background: #467DF2;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    padding: 10px;
+    width: 83px;
+    outline: none;
+    border: none;
+}
+
+.header .header-search-upload:hover {
+    background: #2F54A3;
+    cursor: pointer;
+}
+
+/*=============== MAIN ===============*/
+.main {
+    padding: 25px 40px 73px 40px;
+}
+
+.main-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main .main-title {
+    color: #4F4E4F;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.main .card {
+    max-width: 349px;
+    border-radius: 10px;
+    background: #FFF;
+    margin: 20px;
+}
+
+.main .card:hover {
+    box-shadow: 0 4px 20px 0 rgba(102, 102, 102, 0.15);
+}
+
+.card .card-img {
+    display: flex;
+    position: relative;
+}
+
+.card .card-review {
+    position: absolute;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    top: 12px;
+    left: 12px;
+}
+
+.card .card-review.moderation {
+    background: rgba(247, 247, 247, 0.80);
+    color: #4F4E4F;
+}
+
+.card .card-review.published {
+    background: #C6E0C3;
+    color: #027900;
+}
+
+.card .card-review.error {
+    background: rgba(255, 188, 188, 0.80);
+    color: #DB0C0C;
+}
+
+.main .card-title {
+    color: #4F4E4F;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.main .card-date {
+    color: #4F4E4F;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
