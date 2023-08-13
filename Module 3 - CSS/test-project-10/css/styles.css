@@ -56,7 +56,7 @@ img {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 17px;
+    padding: 0 17px; /* ошибка с padding - 1 */
     border: 1px solid #E2E2E2;
     flex-shrink: 0;
 }
@@ -89,6 +89,7 @@ img {
     align-items: center;
     text-decoration: none;
     padding: 13px 15px;
+    margin: 4px; /* не было margin между элементами - 2 */
 }
 
 .sidebar .navigation-item a span {
@@ -112,7 +113,7 @@ img {
 .sidebar .feedback {
     padding: 13px 12px;
     max-width: 216px;
-    position: absolute;
+    position: fixed; /* исправлено с position: absolute на fixed - 3 */
     bottom: 17px;
     border: 1px solid transparent;
 }
@@ -154,6 +155,8 @@ img {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #E2E2E2;
+    position: relative;
+    z-index: 5;
 }
 
 .header .header-info {
@@ -162,10 +165,11 @@ img {
 }
 
 .header .menu {
-    position: relative;
+    /* */
 }
 
-.tasks-block {
+.header .tasks-block {
+    margin-top: 16px;
     display: none;
     position: absolute;
     width: 150px;
@@ -173,7 +177,7 @@ img {
     background: #FFF;
     box-shadow: 0 4px 20px 0 rgba(102, 102, 102, 0.15);
     padding: 30px 25px 30px 20px;
-    left: 190px;
+    left: 230px;
 }
 
 .task-item {
@@ -192,6 +196,7 @@ img {
 .menu ul li:last-child:hover .tasks-block {
     display: block;
     cursor: pointer;
+    z-index: 1;
 }
 
 .header .header-info ul {
@@ -225,11 +230,55 @@ img {
     margin-right: 5px;
 }
 
-.header-search {
+/* Работа над ошибками */
+
+.header .header-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header .header-search-input {
+    border: none;
+    outline: none;
+    background: #EFEFF5;
+    padding: 10px 20px 10px 0;
+    width: 293px;
+}
+
+.header .header-search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    gap: 10px;
+    background: #EFEFF5;
+    padding-left: 10px;
+}
+
+.header .header-search-button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header .header-search-actions {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header .header-search-actions a {
+    display: block;
+}
+
+/*  Работа над ошибками - end - 4 */
+
+
+
+/* .header-search-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .header-search-input {
@@ -239,22 +288,12 @@ img {
     outline: none;
     padding: 10px 44px;
     width: 373px;
-}
-
-.header-search-button {
-    position: absolute;
-    left: 20px;
-    font-size: 0;
-}
+} */
 
 .header-search-input::placeholder {
     color: #B3B3B3;
     font-size: 14px;
     line-height: 19px;
-}
-
-.header-search-actions a {
-    margin: 0 40px;
 }
 
 .header .header-search-actions a:hover svg path {
@@ -297,6 +336,7 @@ img {
     font-weight: 800;
     line-height: 48px;
     margin-bottom: 20px;
+    font-family: NunitoExtraBold, sans-serif;
 }
 
 .main .card {
@@ -346,6 +386,7 @@ img {
     font-weight: 800;
     line-height: 25px;
     margin-bottom: 8px;
+    font-family: NunitoExtraBold, sans-serif;
 }
 
 .main .card-date {
@@ -366,23 +407,34 @@ img {
     justify-content: space-between;
 }
 
+.card-actions a:hover svg path {
+    fill: #467DF2
+}
+
+.card-actions a:hover ellipse {
+    fill: #467DF2
+}
+
 /*=============== Technical support block ===============*/
 .tech-support-block {
     border-radius: 10px 10px 0 0;
     background: #467DF2;
     width: 186px;
-    padding: 10px 0;
+    padding: 10px 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: -75px;
+    right: -78px;
     top: 327px;
     transform: rotate(-90deg);
+    transition: 0.3s all ease;
 }
 
 .tech-support-block:hover {
     background: #2F54A3;
+    right: -68px;
+    cursor: pointer;
 }
 
 .tech-support-block svg {
