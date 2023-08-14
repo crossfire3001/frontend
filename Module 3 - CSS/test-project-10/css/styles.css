@@ -163,7 +163,7 @@ img {
 }
 
 .header .menu {
-   position: relative;
+/*   position: relative; */
 }
 
 .header .block-container {
@@ -196,7 +196,7 @@ img {
 
 .menu ul li:last-child:hover .block-container {
     display: block;
-    z-index: 10;
+    z-index: 1;
 }
 
 .header .header-info ul {
@@ -321,7 +321,7 @@ img {
 /*=============== MAIN ===============*/
 .main {
     padding: 25px 40px 73px 40px;
-    position: relative;
+/*    position: relative; */
 }
 
 .main-cards {
@@ -424,7 +424,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     right: -78px;
     top: 327px;
     transform: rotate(-90deg);
