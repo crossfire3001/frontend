@@ -1,0 +1,80 @@
+@media screen and (max-width: 1229px) {
+
+    /*=============== HEADER & NAV ===============*/
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    /*=============== HEADER & NAV ===============*/
+    .header .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 50px;
+    }
+
+    .header .menu {
+        order: 3;
+        grid-column: 1 / 3;
+    }
+
+    .header .logo {
+        justify-self: end;
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    /*=============== HEADER & NAV ===============*/
+    .header .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 230px;
+    }
+
+    .header .burger {
+        display: block;
+        color: #bbbbbb;
+        font-size: 28px;
+        justify-self: left;
+    }
+
+    .header .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /*=============== MAIN ===============*/
+    .main .container {
+        grid-template-columns: 1fr;
+    }
+
+    .main .main-image {
+        grid-column: unset;
+        grid-row: unset;
+        order: 2;
+    }
+
+    .main h1 {
+        order: 1;
+        margin-bottom: 41px;
+    }
+
+    .main .main-date {
+        order: 3;
+    }
+
+    .main .main-text {
+        order: 4;
+    }
+
+    .main .main-button-actions {
+        order: 5;
+    }
+
+}
