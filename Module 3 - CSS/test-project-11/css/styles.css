@@ -280,3 +280,12 @@ li {
     color: rgb(186, 179, 179);
     margin-left: 358px;
 }
+
+/*=============== BURGER MENU ===============*/
+.header .burger {
+    display: none;
+}
+
+.header .menu .close {
+    display: none;
+}
