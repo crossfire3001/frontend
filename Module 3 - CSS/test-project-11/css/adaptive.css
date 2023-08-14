@@ -8,13 +8,13 @@
     }
 
     /*=============== MAIN ===============*/
-    .main .main-image {
+    .main .main-image img {
         width: 400px;
     }
 
-    .main .main-image img {
+ /*   .main .main-image img {
         max-width: 100%;
-    }
+    } */
 
     /*=============== PRODUCTS ===============*/
     .products .products-items {
@@ -128,8 +128,25 @@
     }
 
     /*=============== ORDER ===============*/
+    .order .container {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .order .order-text-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
+    .order .order-text-message {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .order .order-form {
+        margin-left: 0;
+        flex-basis: 100%;
+    }
 
     /*=============== FOOTER ===============*/
     .footer .container {
@@ -144,9 +161,43 @@
 /* 375 - 424 */
 @media screen and (max-width: 424px) {
 
+    /*=============== HEADER & NAV ===============*/
+    .header .menu {
+        display: none;
+    }
+
+    /*=============== MAIN ===============*/
+    .main .main-image img {
+       max-width: 100%;
+   }
+
 }
 
 /* 320 - 374 */
 @media screen and (max-width: 374px) {
+
+    /*=============== MAIN ===============*/
+    .main .main-info h1 {
+        font-size: 38px;
+    }
+
+    /*=============== ORDER ===============*/
+
+    .order .order-form {
+        text-align: center;
+    }
+
+    .order .order-input {
+        width: 290px;
+    }
+
+    .order .btn {
+        width: 290px;
+    }
+
+    /*=============== FOOTER ===============*/
+    .footer .rights {
+        margin-left: 20px;
+    }
 
 }
