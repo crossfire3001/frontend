@@ -1,0 +1,122 @@
+/*=============== FONTS ===============*/
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto.ttf");
+}
+
+
+/*=============== BASE ===============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F9F9F9;;
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+    background: #FFF;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 39px 0 30px 0;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 50px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+}
+
+.menu ul li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.menu ul a {
+    color: #000;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+/*=============== PRODUCTS ===============*/
+.products {
+    padding-top: 25px;
+    padding-bottom: 37px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.product {
+    margin-top: 40px;
+    width: 300px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    text-align: center;
+}
+
+.product-image {
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.product-text {
+    color: #000;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 15px 0 13px 0;
+}
+
+.button {
+    width: 260px;
+    height: 57px;
+    border: 0;
+    padding: 17px;
+    border-radius: 10px;
+    background: #00A9DE;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.phone {
+    border-radius: 50%;
+    background: radial-gradient(50% 50.00% at 50% 50.00%, #0176FF 0%, #72B3FF 100%);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
