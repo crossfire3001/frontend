@@ -88,7 +88,56 @@ basket.splice(1, 1);
 console.log(basket); // ['яблоко', 'банан']
 console.log(basket.indexOf('яблоко')); // 0
 
+/* Массив объектов */
 
+let people = [
+    {
+        name: 'Ivan',
+        lastName: 'Ivanov'
+    },
+    {
+        name: 'George',
+        lastName: 'Wilson'
+    }
+]
+
+/* Свойство массива length */
+
+let trash = ['apple', 'ginger', 'spice'];
+
+console.log(trash.length) // 3;
+
+/* Количество элементов в объекте */
+
+console.log(Object.keys(person3)); // name, personalData
+console.log(Object.keys(person3).length); // 2
+
+/* Разные данные в массиве */
+
+let array = [{
+    name: 'Evangelos'
+    },
+    13,
+    'string',
+    true
+]
+
+console.log(array[0].name) // Evangelos
+
+/* Глобальные объекты в JS */
+
+// Специальные объекты, доступные в любом месте кода
+
+// объект Math
+console.log(Math.pow(2,2)); // 4
+
+let number = 7;
+console.log(Math.pow(number, 3)); // 343
+
+/* Свойства у строк */
+
+let name2 = 'John';
+console.log(name2.length); // 4
 
 
 
